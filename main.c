@@ -16,13 +16,13 @@
 typedef struct st_quote{
     char author[100];
     char text[255];
-    int likes;
-    int word_count;
+    int likes;    // 좋아요 개수
+    int word_count;    // 단어 개수
 } QUOTE;
 
-// 전역 변수: 구조체 포인터 배열 (동적 할당된 QUOTE 구조체를 가리킴)
+// 전역 변수: 구조체 포인터 배열 (동적 할당된 QUOTE 구조체를 가리킴) > 50개
 QUOTE* quote_list[MAX_QUOTES]; 
-int quote_count = 0;
+int quote_count = 0;    // 명언 개수수
 
 // ===============================================
 // 함수 원형 (Function Prototypes)
